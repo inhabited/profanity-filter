@@ -1,0 +1,132 @@
+/*--------------------------------------------------
+	~ font library
+---------------------------------------------------*/
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('/assets/fonts/gotham/GothamBold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('/assets/fonts/opensans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('/assets/fonts/vcrosdmono/VCR_OSD_MONO_1.001.ttf');
+}
+
+/*--------------------------------------------------
+	~ links
+---------------------------------------------------*/
+
+A:link {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+A:visited {
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+A:hover {
+    text-shadow: 0pt 0pt 0.1em white, 0pt 0pt 0.1em white;
+    color: white;
+    text-decoration: none
+}
+
+/*--------------------------------------------------
+	~ background image
+---------------------------------------------------*/
+
+body {
+    background-color: #2a2a2a;
+    color: white;
+
+    background-image: url("/assets/img/background.svg");
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+/*--------------------------------------------------
+	~ global font preference
+---------------------------------------------------*/
+
+body {
+    font-family: 'VCR OSD Mono', serif !important;
+    color: white;
+}
+
+/*--------------------------------------------------
+	~ header
+---------------------------------------------------*/
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a.active {
+    background-color: #1DB954;
+    border-radius: 100px;
+}
+
+/*--------------------------------------------------
+	~ main container
+---------------------------------------------------*/
+
+.main-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login-button {
+    font-family: 'Gotham', serif !important;
+    font-size: 16px;
+    background-color: #1DB954;
+    border-radius: 100px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transform: translate(0%, 20%);
+}
+
+/*--------------------------------------------------
+	~ footer
+---------------------------------------------------*/
+
+.footer {
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: fixed;
+    bottom: -30px;
+    display: inline;
+}
+
+/*--------------------------------------------------
+	~ text box
+---------------------------------------------------*/
+
+.input-box {
+/*  resize: vertical;*/
+    resize: none;
+    overflow: hidden;
+    border: 1px solid black;
+    height: 100px;
+    width: 500px;
+}
